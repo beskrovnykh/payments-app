@@ -7,7 +7,7 @@ api = CustomerDto.api
 _customer = CustomerDto.customer
 
 
-@api.route('/')
+@api.route("")
 class CustomerList(Resource):
     @api.doc('list_of_registered_customers')
     @api.marshal_list_with(_customer, envelope='data')

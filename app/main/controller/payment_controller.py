@@ -8,7 +8,7 @@ api = PaymentDto.api
 _payment = PaymentDto.payment
 
 
-@api.route('/')
+@api.route("")
 class PaymentList(Resource):
     @api.marshal_list_with(_payment, envelope='data')
     @api.param('name', description='Customer name', type='string')
