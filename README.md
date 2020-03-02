@@ -8,11 +8,12 @@ All dependencies are provided via `requirements.txt`. Use `pip install -r requir
 
 ## File Navigation
 * `config.py` ables to switch between Testing, Development and Production modes; parameterized via DATABASE_URL to use MySQL (MariaDB) or Postgress in production
-* `manage.py` application entry point set of commands for running tests, migrating database, running web app (and more)
-* `migrations/` scripts for database maigration
-* `model/` data access layer
-* `service/` buisness logic
-* `controller/` end points
+* `manage.py` application entry point, consists of set of commands for running tests, migrating database, running web app (and more)
+* `migrations/` scripts for database migration
+* `model/` data access layer consits of ORM entities, 
+* `service/` buisness logic of application,
+* `controller/` REST end points,
+* `utils/` package for DTO,  converters, transformers, helpers, etc.
 
 ## Apllication Usage
 1. `python manage.py db upgrade` initialize database and upgrades it to the current state
