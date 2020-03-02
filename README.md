@@ -3,7 +3,7 @@ Flask web app ready to use in production
 
 ## Dependencies
 
-For this app Flask–Script, RestPlus, SqlAlchemy, Flask-Migrate and Bluebrint were used.
+*Flask–Script*, *RestPlus*, *SqlAlchemy*, *Flask-Migrate* and *Bluebrint* and more.
 All dependencies are provided via `requirements.txt`. Use `pip install -r requirements.txt` to install
 
 ## File Navigation
@@ -11,8 +11,8 @@ All dependencies are provided via `requirements.txt`. Use `pip install -r requir
 * `manage.py` application entry point set of commands for running tests, migrating database, running web app (and more)
 * `migrations/` scripts for database maigration
 * `model/` data access layer
-* `service/` application buisness logic
-* `controller/` Payments REST API
+* `service/` buisness logic
+* `controller/` end points
 
 ## Apllication Usage
 1. `python manage.py db upgrade` initialize database and upgrades it to the current state
